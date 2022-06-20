@@ -17,6 +17,12 @@ Note: Docker container lives as long as the process/application inside it is run
 
 * docker run image_name  --> Runs a container from the image on the docker host, if the image is not present it will pull the image from dockerHub
 
+* dpcker run image_name:tag --> Runs a container from the image with specified tag (version) from the docker hub or other registry, if we won't specify the default is latest
+
+* docker run -it image_name --> Runs docker in the interactive mode and attached to terminal, as by default it won't be able to access the standard input of the terminal
+
+* docker run -p 80:5000 image_name --> to access a webapp or app running inside the docker container on the host we can use docker container ip (each one gets an internal ip which is only accessible to docker host). To access it outside the docker host we will need to map the docker container ip to docker host by using port forwarding
+
 * docker run -d image_name ---> To run the container in the detached mode in the background and we will be back in the terminal to continue other operations
 
 * docker attach container id/name ---> To attach the container
