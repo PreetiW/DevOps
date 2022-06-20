@@ -36,3 +36,5 @@ Note: Docker container lives as long as the process/application inside it is run
 * docker pull image_name --> to only pull the image and not run the container
 
 * docker exec container_name/id command_to_run --> to run a command on the docker container
+
+
