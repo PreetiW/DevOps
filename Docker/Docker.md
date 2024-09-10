@@ -11,6 +11,15 @@ Docker is container based technology and containers are just user space of the o
 A Virtual Machine, on the other hand, is not based on container technology. They are made up of user space plus kernel space of an operating system. Under VMs, server hardware is virtualized. Each VM has Operating system (OS) & apps. It shares hardware resource from the host.
 
 
+## Gotchas!
+
+Linux OS natively supports containers and the technology Docker uses. For other OS you first need to install Docker Desktop Tool.
+
+## Images & Containers - Basic Blocks of Docker
+
+**Images** - The blueprint/template which contains code and required tools to run the code
+**Containers** - The running unit of software (Running instances of images), we can create multiple containers based on one image
+
 # Docker Commands
 
 Note: Docker container lives as long as the process/application inside it is running, after that it exists
